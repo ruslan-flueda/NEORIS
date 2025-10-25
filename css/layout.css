@@ -1,0 +1,366 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'TT Neoris';
+}
+section {
+  display: block;
+  border: dashed;
+  border-color: rgb(238, 255, 0);
+  margin-bottom: 100px;
+}
+.section-name {
+  font-size: 14px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.font-star {
+  font-weight: 100;
+  font-size: 14pt;
+}
+
+/* ПЕРВЫЙ БЛОК */
+
+#s-1 {
+  width: 100%;
+  height: 671px;
+}
+
+/* Растянутый текст */
+
+.atic-container {
+  width: 1180px; /* 1280 - 50 - 50 */
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding: 0 50px; /* внутренние поля */
+  box-sizing: border-box;
+}
+.atic {
+  display: flex;
+  justify-content: space-between; /* равномерное распределение букв */
+  font-size: 16px; /* размер текста */
+  font-family: 'TT Neoris';
+  text-transform: uppercase;
+  width: 100%;
+}
+.atic span {
+  display: inline-block;
+}
+
+h2 {
+  font-family: 'TT Neoris';
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 12px 4px;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: inline;
+}
+
+/* Таблетка */
+.tablet {
+  position: relative;
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+#tablet-image {
+  width: 1179px;
+  height: auto;
+}
+.tablet-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* центр по X и Y */
+  font-size: 230px;
+  font-weight: 400; /* вместо 'regular' */
+  text-align: center;
+  color: #fff;
+  margin: 0px;
+}
+
+/* ВТОРОЙ БЛОК */
+#s-2 {
+  width: 100%;
+  height: 496px;
+}
+
+/* ТРЕТИЙ БЛОК */
+#s-3 {
+  width: 100%;
+  height: 669px;
+}
+
+/* ЧЕТВЕРТЫЙ БЛОК */
+#s-4 {
+  width: 100%;
+  height: 708px;
+}
+
+.font-lines {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  gap: 1.5rem; /* расстояние между шрифтами в ряду */
+}
+
+.row p {
+  font-family: 'TT Neoris', sans-serif;
+  font-size: 28px;
+}
+
+/* обычные */
+.row.normal .hairline {
+  font-weight: 100;
+  font-style: normal;
+}
+.row.normal .thin {
+  font-weight: 200;
+  font-style: normal;
+}
+.row.normal .extralight {
+  font-weight: 300;
+  font-style: normal;
+}
+.row.normal .light {
+  font-weight: 400;
+  font-style: normal;
+}
+.row.normal .regular {
+  font-weight: 500;
+  font-style: normal;
+}
+.row.normal .medium {
+  font-weight: 600;
+  font-style: normal;
+}
+.row.normal .bold {
+  font-weight: 700;
+  font-style: normal;
+}
+.row.normal .black {
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* курсив */
+.row.italic .hairline {
+  font-weight: 100;
+  font-style: italic;
+}
+.row.italic .thin {
+  font-weight: 200;
+  font-style: italic;
+}
+.row.italic .extralight {
+  font-weight: 300;
+  font-style: italic;
+}
+.row.italic .light {
+  font-weight: 400;
+  font-style: italic;
+}
+.row.italic .regular {
+  font-weight: 500;
+  font-style: italic;
+}
+.row.italic .medium {
+  font-weight: 600;
+  font-style: italic;
+}
+.row.italic .bold {
+  font-weight: 700;
+  font-style: italic;
+}
+.row.italic .black {
+  font-weight: 900;
+  font-style: italic;
+}
+.font-in-numbers-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.font-in-numbers-second {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.descriptions {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.variable-example {
+  display: flex;
+}
+
+.letter-V {
+  font-size: 286px;
+  font-weight: 50;
+  font-style: italic;
+}
+
+.letter-A1 {
+  font-size: 286px;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.letter-R {
+  font-size: 286px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.letter-I {
+  font-size: 286px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.letter-A2 {
+  font-size: 286px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.letter-B {
+  font-size: 286px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.letter-L {
+  font-size: 286px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.letter-E {
+  font-size: 286px;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.Union {
+  width: 25px;
+}
+
+/* ПЯТЫЙ БЛОК */
+
+#s-5 {
+  width: 100%;
+  height: 1012px;
+}
+
+.soap {
+  width: 1181px;
+}
+
+/* ШЕСТОЙ БЛОК */
+#s-6 {
+  width: 100%;
+  height: 670px;
+}
+
+.glyph-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.glyph-column {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.glyph-row {
+  display: flex;
+  gap: 4px;
+}
+
+.glyph {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 88px;
+  height: 87px;
+  font-size: 36px;
+  font-weight: 400;
+  color: #858585;
+
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+  outline-offset: -1px;
+  border-radius: 14px;
+}
+
+/* СЕДЬМОЙ БЛОК */
+#s-7 {
+  width: 100%;
+  height: 1151px;
+}
+
+.Features {
+  width: 580px;
+}
+
+.Features-description {
+  font-size: 14px;
+  color: #979797;
+}
+
+.Neo-dot-ris {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.clocks {
+  width: 612px;
+}
+
+.circle-frame {
+  position: relative;
+  width: 612px;
+  margin: 0 auto;
+}
+
+.circle-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: rotate(var(--angle)) translate(120px)
+    rotate(calc(-1 * var(--angle)));
+  transform-origin: center center;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Photo-short {
+  width: 580px;
+}

@@ -19,8 +19,12 @@
       </div>
       <!-- Таблетка -->
       <div class="tablet">
-        <img src="/img/Tablet.svg" alt="Tablet image" id="tablet-image" />
-        <h1 class="tablet-text">NEORIS</h1>
+        <div class="tablet-content">
+          <img src="/img/Tablet.svg" alt="Tablet image" id="tablet-image" />
+          <h1 class="tablet-text">NEORIS</h1>
+          <h3 id="star-1"></h3>
+          <h3 id="star-2"></h3>
+        </div>
       </div>
     </section>
 
@@ -28,86 +32,125 @@
 
     <section id="s-2">
       <!-- блок "о шрифте" -->
-      <h2 class="section-name">О шрифте</h2>
-      <p>
-        TT Neoris — шрифт, разработанный командой TypeType в 2023 году. Его
-        название образовано от двух слов: “neo” — «новый» и “ris” ---
-        «возвышение». Работа над ним длилась два с половиной года.
-      </p>
-      <p>
-        Это самый амбициозный проект студии: цель — создать «идеальный
-        неогротеск», который откроет новую главу в типографике и станет
-        бестселлером.
-      </p>
-      <p>
-        Его характер нейтральный, но с деталями, которые делают его уникальным.
-      </p>
+
+      <h2 id="about-head">О шрифте</h2>
+      <div id="about-text">
+        <p>
+          TT Neoris — шрифт, разработанный командой TypeType в 2023 году. Его
+          название образовано от двух слов: “neo” — «новый» и “ris” ---
+          «возвышение». Работа над ним длилась два с половиной года.
+        </p>
+        <p>
+          Это самый амбициозный проект студии: цель — создать «идеальный
+          неогротеск», который откроет новую главу в типографике и станет
+          бестселлером.
+        </p>
+        <p>
+          Его характер нейтральный, но с деталями, которые делают его
+          уникальным.
+        </p>
+      </div>
+      <img id="about-union-1" src="img/Union.svg" alt="Union" />
+      <img id="about-union-2" src="img/Union.svg" alt="Union" />
+      <!-- <div id="about-container">
+      </div> -->
     </section>
 
     <!-- !ТРЕТИЙ БЛОК -->
     <section id="s-3">
-      <h2 class="section-name">Начертания</h2>
-      <h2>Normal</h2>
-      <h2>Italic</h2>
-
+      <h2 id="outline-head">Начертания</h2>
+      <img id="outline-long-line" src="img/long-line.svg" alt="long-line" />
+      <div id="outline-styles">
+        <div id="outline-normal">
+          <h2 class="grey-h2">Normal</h2>
+          <img src="img/Line 262.svg" alt="line" />
+        </div>
+        <div id="outline-italic">
+          <h2 class="grey-h2">Italic</h2>
+          <!-- *пофиксить неровную свг -->
+          <img id="h2-italic" src="img/italic-line.svg" alt="italic-line" />
+        </div>
+      </div>
+      <!-- *что это -->
       <div class="font-lines">
         <!-- Обычные -->
         <div class="row normal">
           <p class="hairline">Hairline</p>
-          <h3 class="font-star"></h3>
+          <img src="img/between-sign.svg" alt="dot" />
           <p class="thin">Thin</p>
-          <p class="font-star"></p>
+          <img src="img/between-sign.svg" alt="dot" />
           <p class="extralight">ExtraLight</p>
+          <img src="img/between-sign.svg" alt="dot" />
           <p class="light">Light</p>
+          <img src="img/between-sign.svg" alt="dot" />
           <p class="regular">Regular</p>
+          <img src="img/between-sign.svg" alt="dot" />
           <p class="medium">Medium</p>
+          <img src="img/between-sign.svg" alt="dot" />
+          <p class="demibold">Demibold</p>
+          <img src="img/between-sign.svg" alt="dot" />
           <p class="bold">Bold</p>
+          <img src="img/between-sign.svg" alt="dot" />
+          <p class="extrabold">Extrabold</p>
+          <img src="img/between-sign.svg" alt="dot" />
           <p class="black">Black</p>
         </div>
-
         <!-- Курсив -->
         <div class="row italic">
           <p class="hairline">Hairline</p>
+          <img src="img/between-sign.svg" alt="dot" />
           <p class="thin">Thin</p>
+          <img src="img/between-sign.svg" alt="dot" />
           <p class="extralight">ExtraLight</p>
+          <img src="img/between-sign.svg" alt="dot" />
           <p class="light">Light</p>
+          <img src="img/between-sign.svg" alt="dot" />
           <p class="regular">Regular</p>
+          <img src="img/between-sign.svg" alt="dot" />
           <p class="medium">Medium</p>
+          <img src="img/between-sign.svg" alt="dot" />
+          <p class="demibold">Demibold</p>
+          <img src="img/between-sign.svg" alt="dot" />
           <p class="bold">Bold</p>
+          <img src="img/between-sign.svg" alt="dot" />
+          <p class="extrabold">Extrabold</p>
+          <img src="img/between-sign.svg" alt="dot" />
           <p class="black">Black</p>
         </div>
       </div>
+
       <!--начертания в цифрах-->
+      <div id="font-in-numbers">
+        <!-- верхний блок -->
+        <div class="font-in-numbers-main">
+          <img src="img/Union.svg" alt="Union" />
+          <div id="outline-21">
+            <p id="outline-demibold">21</p>
+            <p>Начертание</p>
+          </div>
+          <img src="img/Union.svg" alt="Union" />
+        </div>
+        <!-- нижний блок -->
+        <div class="font-in-numbers-second">
+          <div class="outline-species">
+            <p class="outline-medium">10</p>
+            <p>Прямых</p>
+          </div>
 
-      <div class="font-in-numbers-main">
-        <p>21</p>
-        <p>Начертание</p>
+          <div class="outline-species">
+            <p class="outline-medium">1</p>
+            <p>Переменный</p>
+          </div>
+
+          <div class="outline-species">
+            <p class="outline-medium">10</p>
+            <p>Курсивных</p>
+          </div>
+        </div>
       </div>
-      <div class="font-in-numbers-second">
-        <div class="descriptions">
-          <p>10</p>
-          <p>Прямых</p>
-        </div>
-
-        <div class="descriptions">
-          <p>1</p>
-          <p>Переменный</p>
-        </div>
-
-        <div class="descriptions">
-          <p>10</p>
-          <p>Курсивных</p>
-        </div>
-      </div>
-
-      <img class="Union" src="img/Union.svg" alt="Union" />
-      <img class="Union" src="img/Union.svg" alt="Union" />
-      <img src="img/long-line.svg" alt="long-line" />
-      <img src="img/Line 262.svg" alt="line" />
-      <img src="img/italic-line.svg" alt="italic-line" />
 
       <!--variable-->
-      <div class="variable-example">
+      <div id="variable-example">
         <p class="letter-V">V</p>
         <p class="letter-A1">A</p>
         <p class="letter-R">R</p>
@@ -125,8 +168,9 @@
       <p>Поддержка более 230</p>
       <img class="Union" src="img/Union.svg" alt="Union" />
       <div>
-        <img src="img/language-bg.svg" alt="language-bg" />
+        <img id="language-bg" src="img/language-bg.svg" alt="language-bg" />
       </div>
+      <p class="languages">русский</p>
     </section>
 
     <!-- !ПЯТЫЙ БЛОК -->
@@ -136,9 +180,9 @@
 
     <!-- !ШЕСТОЙ БЛОК -->
     <section id="s-6">
-      <h2>Глифы</h2>
-      <h2>Ģłŷþћ₴</h2>
-      <img src="img/long-line-glyphs.svg" alt="" />
+      <h2 id="glyph-head">Глифы</h2>
+      <h2 id="glyph-head-2">Ģłŷþћ₴</h2>
+      <img id="glyph-line" src="img/long-line-glyphs.svg" alt="glyph-line" />
       <div class="glyph-grid">
         <!-- первая колонка -->
         <div class="glyph-column">
@@ -232,7 +276,7 @@
         </div>
       </div>
     </section>
-
+    <!-- !СЕДЬМОЙ БЛОК -->
     <section id="s-7">
       <div>
         <h2>Особенности</h2>
@@ -263,7 +307,7 @@
       </div>
       <img class="Neo-dot-ris" src="img/neo-dot-ris.png" alt="neo-dot-ris" />
     </section>
-
+    <!-- !ВОСЬМОЙ БЛОК -->
     <section id="s-8">
       <h2>Специальные символы</h2>
       <p>
@@ -285,22 +329,25 @@
         <div class="circle-item" style="--angle: 300deg">F</div>
       </div>
     </section>
+    <!-- !ДЕВЯТЫЙ БЛОК -->
     <!-- Надо разобраться с дивами -->
     <section id="s-9">
       <h2>Neoris в жизни</h2>
       <div class="Photo-examples">
         <div class="Photo-row">
-          <div class="Photo-short">
-            <img src="img/Photo-1.png" alt="" />
-          </div>
-          <div class="Photo-short">
-            <img src="img/Photo-1-1.png" alt="" />
-          </div>
+          <img class="Photo-short" src="img/Photo-1.png" alt="" />
+          <img class="Photo-short" src="img/Photo-1-1.png" alt="" />
         </div>
-        <div class="Photo-long">
-          <img src="img/Photo-3.png" alt="" />
-        </div>
+        <img id="Photo-long" src="img/Photo-3.png" alt="" />
       </div>
+    </section>
+
+    <section id="s-10">
+      <h2>Neoris</h2>
+      <h2>Неогротеск</h2>
+      <h2>бдз257</h2>
+      <h2>Хайруллин Руслан</h2>
+      <img src="img/Footer-line.svg" alt="" />
     </section>
   </body>
 </html>

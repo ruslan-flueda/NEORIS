@@ -7,7 +7,6 @@ section {
   display: block;
   border: dashed;
   border-color: rgb(238, 255, 0);
-  margin-bottom: 100px;
 }
 .section-name {
   font-size: 14px;
@@ -15,6 +14,7 @@ section {
 
 p {
   font-size: 16px;
+  line-height: 20px;
 }
 
 .font-star {
@@ -22,7 +22,18 @@ p {
   font-size: 14pt;
 }
 
-/* ПЕРВЫЙ БЛОК */
+h2 {
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 18px;
+  padding: 12px 16px;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: inline;
+}
+
+/* !ПЕРВЫЙ БЛОК */
 
 #s-1 {
   width: 100%;
@@ -32,18 +43,17 @@ p {
 /* Растянутый текст */
 
 .atic-container {
-  width: 1180px; /* 1280 - 50 - 50 */
+  width: 1180px;
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 100px;
-  padding: 0 50px; /* внутренние поля */
   box-sizing: border-box;
 }
 .atic {
   display: flex;
-  justify-content: space-between; /* равномерное распределение букв */
-  font-size: 16px; /* размер текста */
-  font-family: 'TT Neoris';
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 500;
   text-transform: uppercase;
   width: 100%;
 }
@@ -51,26 +61,19 @@ p {
   display: inline-block;
 }
 
-h2 {
-  font-family: 'TT Neoris';
-  font-weight: 500;
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 12px 4px;
-  border: 1px solid black;
-  border-radius: 20px;
-  display: inline;
-}
-
 /* Таблетка */
 .tablet {
-  position: relative;
   width: 1280px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   margin: 0 auto;
+}
+
+.tablet-content {
+  width: 1180px;
+  position: relative;
 }
 
 #tablet-image {
@@ -81,74 +84,188 @@ h2 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* центр по X и Y */
+  transform: translate(-50%, -50%);
   font-size: 230px;
-  font-weight: 400; /* вместо 'regular' */
+  font-weight: 400;
   text-align: center;
-  color: #fff;
-  margin: 0px;
+  letter-spacing: -3px;
+  background-color: #929292;
+  color: transparent;
+  text-shadow: 0px 0px 5.4px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
 }
 
-/* ВТОРОЙ БЛОК */
+#star-1 {
+  font-size: 88px;
+  font-weight: 700;
+  position: absolute;
+  top: 184px;
+  left: 534px;
+  background-color: #a6a6a6;
+  color: transparent;
+  text-shadow: 0px 0px 5.4px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+#star-2 {
+  font-size: 60px;
+  font-weight: 700;
+  position: absolute;
+  top: 104px;
+  left: 970px;
+  background-color: #a6a6a6;
+  color: transparent;
+  text-shadow: 0px 0px 5.4px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+/* !ВТОРОЙ БЛОК */
 #s-2 {
   width: 100%;
   height: 496px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: relative;
 }
 
-/* ТРЕТИЙ БЛОК */
+#about-head {
+  position: absolute;
+  top: 150px;
+  left: 50px;
+}
+#about-text {
+  position: absolute;
+  width: 580px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  top: 150px;
+  left: 452px;
+}
+#about-union-1 {
+  position: absolute;
+  top: 150px;
+  left: 405px;
+}
+#about-union-2 {
+  position: absolute;
+  top: 150px;
+  left: 1205px;
+}
+/* !ТРЕТИЙ БЛОК */
 #s-3 {
+  position: relative;
   width: 100%;
   height: 669px;
 }
 
-/* ЧЕТВЕРТЫЙ БЛОК */
-#s-4 {
-  width: 100%;
-  height: 708px;
+#outline-head {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+#outline-long-line {
+  position: absolute;
+  top: 70px;
+  left: 195px;
+}
+
+#outline-styles {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+#outline-normal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+#outline-italic {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+#h2-italic {
+  position: absolute;
+  top: 46px;
+  left: 4px;
+}
+.grey-h2 {
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .font-lines {
-  display: flex;
+  position: absolute;
+  display: block;
   flex-direction: column;
+  width: fit-content;
+  top: 117px;
+  left: 50px;
 }
 
 .row {
   display: flex;
-  gap: 1.5rem; /* расстояние между шрифтами в ряду */
+  gap: 2px;
 }
 
 .row p {
   font-family: 'TT Neoris', sans-serif;
   font-size: 28px;
+  line-height: 35px;
 }
 
 /* обычные */
 .row.normal .hairline {
-  font-weight: 100;
+  font-weight: 50;
   font-style: normal;
 }
 .row.normal .thin {
-  font-weight: 200;
+  font-weight: 100;
   font-style: normal;
 }
 .row.normal .extralight {
-  font-weight: 300;
+  font-weight: 200;
   font-style: normal;
 }
 .row.normal .light {
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 }
 .row.normal .regular {
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
 }
 .row.normal .medium {
+  font-weight: 500;
+  font-style: normal;
+}
+.row.normal .demibold {
   font-weight: 600;
   font-style: normal;
 }
 .row.normal .bold {
   font-weight: 700;
+  font-style: normal;
+}
+
+.row.normal .extrabold {
+  font-weight: 800;
   font-style: normal;
 }
 .row.normal .black {
@@ -158,26 +275,30 @@ h2 {
 
 /* курсив */
 .row.italic .hairline {
-  font-weight: 100;
+  font-weight: 50;
   font-style: italic;
 }
 .row.italic .thin {
-  font-weight: 200;
+  font-weight: 100;
   font-style: italic;
 }
 .row.italic .extralight {
-  font-weight: 300;
+  font-weight: 200;
   font-style: italic;
 }
 .row.italic .light {
-  font-weight: 400;
+  font-weight: 300;
   font-style: italic;
 }
 .row.italic .regular {
-  font-weight: 500;
+  font-weight: 400;
   font-style: italic;
 }
 .row.italic .medium {
+  font-weight: 500;
+  font-style: italic;
+}
+.row.italic .demibold {
   font-weight: 600;
   font-style: italic;
 }
@@ -185,29 +306,67 @@ h2 {
   font-weight: 700;
   font-style: italic;
 }
+.row.italic .extrabold {
+  font-weight: 800;
+  font-style: italic;
+}
 .row.italic .black {
   font-weight: 900;
   font-style: italic;
 }
+
+#outline-demibold {
+  font-size: 46px;
+  line-height: 46px;
+  font-weight: 600;
+  text-align: center;
+}
+
+#font-in-numbers {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  top: 240px;
+}
+
 .font-in-numbers-main {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  gap: 28px;
 }
 .font-in-numbers-second {
   display: flex;
-  gap: 20px;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  gap: 28px;
+  margin-left: 12px;
+}
+.outline-medium {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+  text-align: center;
 }
 .descriptions {
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-
-.variable-example {
+/* хз как в контейнер поместить */
+#variable-example {
   display: flex;
+  position: absolute;
+  width: 1180px;
+  height: 220px;
+  bottom: 50px;
+  left: 50px;
 }
 
 .letter-V {
@@ -262,7 +421,30 @@ h2 {
   width: 25px;
 }
 
-/* ПЯТЫЙ БЛОК */
+/* !ЧЕТВЕРТЫЙ БЛОК */
+#s-4 {
+  width: 100%;
+  height: 708px;
+  position: relative;
+}
+
+#language-bg {
+  width: 100%;
+  position: absolute;
+  top: 176px;
+}
+
+.languages {
+  font-size: 40pt;
+  letter-spacing: -3px;
+  line-height: 52px;
+  font-weight: ;
+  position: absolute;
+  top: 204px;
+  right: 1148px;
+}
+
+/* !ПЯТЫЙ БЛОК */
 
 #s-5 {
   width: 100%;
@@ -273,16 +455,38 @@ h2 {
   width: 1181px;
 }
 
-/* ШЕСТОЙ БЛОК */
+/* !ШЕСТОЙ БЛОК */
 #s-6 {
   width: 100%;
-  height: 670px;
+  height: 570px;
+  position: relative;
+}
+
+#glyph-head {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+}
+
+#glyph-head-2 {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+}
+
+#glyph-line {
+  position: absolute;
+  top: 120px;
+  left: 156px;
 }
 
 .glyph-grid {
   display: flex;
   gap: 20px;
   justify-content: center;
+  position: absolute;
+  top: 177px;
+  left: 50px;
 }
 
 .glyph-column {
@@ -313,7 +517,7 @@ h2 {
   border-radius: 14px;
 }
 
-/* СЕДЬМОЙ БЛОК */
+/* !СЕДЬМОЙ БЛОК */
 #s-7 {
   width: 100%;
   height: 1151px;
@@ -332,7 +536,7 @@ h2 {
   width: 1180px;
   margin: 0 auto;
 }
-
+/* !ВОСЬМОЙ БЛОК */
 .clocks {
   width: 612px;
 }
@@ -361,6 +565,43 @@ h2 {
   justify-content: center;
 }
 
+/* !ДЕВЯТЫЙ БЛОК */
+#s-9 {
+  width: 100%;
+  height: 1384px;
+  position: relative;
+}
+
+#s-9 h2 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.Photo-examples {
+  position: absolute;
+  width: 1180px;
+  gap: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  top: 123px;
+}
+
+.Photo-row {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  gap: 20px;
+}
+
 .Photo-short {
   width: 580px;
+  object-fit: cover;
+  display: block;
+}
+
+#Photo-long {
+  display: flex;
+  justify-content: center;
+  width: 1180px;
 }

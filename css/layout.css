@@ -1,6 +1,6 @@
 body {
-  margin: 0;
-  padding: 0;
+  width: 1280px;
+  margin: 0 auto;
   font-family: 'TT Neoris';
 }
 section {
@@ -362,6 +362,8 @@ h2 {
 /* хз как в контейнер поместить */
 #variable-example {
   display: flex;
+  align-items: flex-end;
+  justify-content: center;
   position: absolute;
   width: 1180px;
   height: 220px;
@@ -369,52 +371,58 @@ h2 {
   left: 50px;
 }
 
-.letter-V {
+.letter {
   font-size: 286px;
+  line-height: 280px;
+  display: inline-block;
+}
+
+.letter-V {
   font-weight: 50;
   font-style: italic;
+  transform: translate(40px, 30px);
 }
 
 .letter-A1 {
-  font-size: 286px;
   font-weight: 200;
   font-style: italic;
+  transform: translate(-5px, 30px);
 }
 
 .letter-R {
-  font-size: 286px;
   font-weight: 400;
   font-style: normal;
+  transform: translate(-30px, 30px);
 }
 
 .letter-I {
-  font-size: 286px;
   font-weight: 600;
   font-style: normal;
+  transform: translate(-40px, 30px);
 }
 
 .letter-A2 {
-  font-size: 286px;
   font-weight: 900;
   font-style: italic;
+  transform: translate(-30px, 30px);
 }
 
 .letter-B {
-  font-size: 286px;
   font-weight: 600;
   font-style: normal;
+  transform: translate(-30px, 30px);
 }
 
 .letter-L {
-  font-size: 286px;
   font-weight: 400;
   font-style: normal;
+  transform: translate(-40px, 30px);
 }
 
 .letter-E {
-  font-size: 286px;
   font-weight: 200;
   font-style: normal;
+  transform: translate(-50px, 30px);
 }
 
 .Union {
@@ -428,10 +436,67 @@ h2 {
   position: relative;
 }
 
+#language-head {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+}
+
+#language-description {
+  position: absolute;
+  top: 109px;
+  right: 50px;
+}
+
+#language-union {
+  position: absolute;
+  top: 106px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 #language-bg {
-  width: 100%;
+  width: 1976px;
   position: absolute;
   top: 176px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* *подправить расстояние языков друг между другом */
+.languages-row {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.row-1 {
+  top: 200px;
+  transform: translateX(-50%);
+  gap: 200px;
+}
+.row-2 {
+  top: 312px;
+  transform: translateX(-50%);
+  gap: 200px;
+}
+.row-3 {
+  top: 420px;
+  transform: translateX(-50%);
+  gap: 176px;
+}
+.row-4 {
+  top: 528px;
+  transform: translateX(-50%);
+  gap: 255px;
 }
 
 .languages {
@@ -439,9 +504,6 @@ h2 {
   letter-spacing: -3px;
   line-height: 52px;
   font-weight: 500;
-  position: absolute;
-  top: 204px;
-  right: 1148px;
 }
 
 /* !ПЯТЫЙ БЛОК */
@@ -449,10 +511,15 @@ h2 {
 #s-5 {
   width: 100%;
   height: 1012px;
+  position: relative;
 }
 
-.soap {
-  width: 1181px;
+#soap {
+  position: absolute;
+  width: 1180px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* !ШЕСТОЙ БЛОК */
@@ -486,7 +553,8 @@ h2 {
   justify-content: center;
   position: absolute;
   top: 177px;
-  left: 50px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .glyph-column {
@@ -504,7 +572,7 @@ h2 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
+  box-sizing: border-box;
   width: 88px;
   height: 87px;
   font-size: 36px;
@@ -521,10 +589,56 @@ h2 {
 #s-7 {
   width: 100%;
   height: 1151px;
+  position: relative;
 }
 
+#species-head {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+}
+
+#species-text-1 {
+  position: absolute;
+  width: 262px;
+  top: 100px;
+  left: 250px;
+}
+
+#species-text-2 {
+  position: absolute;
+  width: 584px;
+  top: 100px;
+  left: 630px;
+}
+#features-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin: 220px auto;
+  margin-bottom: 0px;
+  width: max-content;
+}
 .Features {
   width: 580px;
+  height: auto;
+}
+
+#upright-cursive {
+  transform: translateX(74px);
+}
+
+#round-dots {
+  transform: translateX(419px);
+}
+
+#soft-character {
+  transform: translateX(298px);
+}
+
+#stylistics-alternates {
+  transform: translateX(241px);
 }
 
 .Features-description {
@@ -532,37 +646,72 @@ h2 {
   color: #979797;
 }
 
-.Neo-dot-ris {
+#Neo-dot-ris {
+  position: absolute;
   width: 1180px;
-  margin: 0 auto;
+  left: 50px;
+  bottom: 100px;
 }
 /* !ВОСЬМОЙ БЛОК */
-.clocks {
-  width: 612px;
+#s-8 {
+  width: 100%;
+  height: 954px;
 }
 
+#symbols-head {
+  top: 100px;
+  left: 50px;
+}
 .circle-frame {
   position: relative;
-  width: 612px;
-  margin: 0 auto;
+}
+#symbols-text {
+  width: 795px;
+  top: 100px;
+  right: 59px;
 }
 
-.circle-item {
+.clocks {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: rotate(var(--angle)) translate(120px)
-    rotate(calc(-1 * var(--angle)));
-  transform-origin: center center;
-  z-index: 2;
-  width: 40px;
-  height: 40px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 50%;
+  width: 612px;
+}
+
+.clocks-symbols {
+  position: absolute;
+  width: 612px;
+  height: 612px;
+}
+
+.clocks-symbols span {
+  font-size: 56px;
+}
+
+#row-1 {
   display: flex;
-  align-items: center;
+  gap: 134px;
   justify-content: center;
+  align-items: center;
+}
+
+#row-2 {
+  display: flex;
+  gap: 380px;
+  justify-content: center;
+  align-items: center;
+}
+
+#row-3 {
+  display: flex;
+  gap: 380px;
+  justify-content: center;
+  align-items: center;
+}
+
+#row-4 {
+  display: flex;
+  gap: 134px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* !ДЕВЯТЫЙ БЛОК */

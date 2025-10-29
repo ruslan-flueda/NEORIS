@@ -20,7 +20,7 @@
       <!-- Таблетка -->
       <div class="tablet">
         <div class="tablet-content">
-          <img id="tablet-image" src="/img/Tablet.svg" alt="Tablet image" />
+          <img id="tablet-image" src="img/Tablet.svg" alt="Tablet image" />
           <h1 class="tablet-text">NEORIS</h1>
           <h3 id="star-1"></h3>
           <h3 id="star-2"></h3>
@@ -150,7 +150,7 @@
       </div>
 
       <!--variable-->
-      <div id="variable-example">
+      <!-- <div id="variable-example">
         <p class="letter-V">V</p>
         <p class="letter-A1">A</p>
         <p class="letter-R">R</p>
@@ -159,23 +159,63 @@
         <p class="letter-B">B</p>
         <p class="letter-L">L</p>
         <p class="letter-E">E</p>
+      </div> -->
+
+      <div id="variable-example">
+        <span class="letter letter-V">V</span>
+        <span class="letter letter-A1">A</span>
+        <span class="letter letter-R">R</span>
+        <span class="letter letter-I">I</span>
+        <span class="letter letter-A2">A</span>
+        <span class="letter letter-B">B</span>
+        <span class="letter letter-L">L</span>
+        <span class="letter letter-E">E</span>
       </div>
     </section>
 
     <!-- !ЧЕТВЕРТЫЙ БЛОК -->
     <section id="s-4">
-      <h2 class="section-name">Языки</h2>
-      <p>Поддержка более 230</p>
-      <img class="Union" src="img/Union.svg" alt="Union" />
+      <h2 id="language-head">Языки</h2>
+      <p id="language-description">Поддержка более 230</p>
+      <img id="language-union" src="img/Union.svg" alt="Union" />
       <div>
         <img id="language-bg" src="img/language-bg.svg" alt="language-bg" />
       </div>
-      <p class="languages">русский</p>
+      <!-- *пофиксить расстояние между языками -->
+      <div class="languages-row row-1">
+        <span class="languages">русский</span>
+        <span class="languages">Български</span>
+        <span class="languages">English</span>
+        <span class="languages">Português</span>
+      </div>
+
+      <div class="languages-row row-2">
+        <span class="languages">Čeština</span>
+        <span class="languages">Slovenčina</span>
+        <span class="languages">Hrvatski</span>
+        <span class="languages">Português</span>
+        <span class="languages">Português</span>
+      </div>
+
+      <div class="languages-row row-3">
+        <span class="languages">Cebuano</span>
+        <span class="languages">Faka-Tonga</span>
+        <span class="languages">Қазақ тілі</span>
+        <span class="languages">Türkmen</span>
+      </div>
+
+      <div class="languages-row row-4">
+        <span class="languages">русский</span>
+        <span class="languages">Română</span>
+        <span class="languages">Català</span>
+        <span class="languages">Euskara</span>
+        <span class="languages">Português</span>
+      </div>
     </section>
 
     <!-- !ПЯТЫЙ БЛОК -->
     <section id="s-5">
-      <img class="soap" src="img/soap.png" alt="soap" />
+      <img id="soap" src="img/soap.png" alt="soap" />
     </section>
 
     <!-- !ШЕСТОЙ БЛОК -->
@@ -279,54 +319,74 @@
     <!-- !СЕДЬМОЙ БЛОК -->
     <section id="s-7">
       <div>
-        <h2>Особенности</h2>
-        <p>Большое внимание в Neoris уделено стилистическим альтернативам.</p>
-        <p>
-          Такой подход позволяет пользователю буквально собирать собственный
-          характер шрифта и формировать уникальный визуальный язык внутри одного
-          семейства.
-        </p>
+        <h2 id="species-head">Особенности</h2>
+        <div id="species-text-1">
+          <p>Большое внимание в Neoris уделено стилистическим альтернативам.</p>
+        </div>
+        <div id="species-text-2">
+          <p>
+            Такой подход позволяет пользователю буквально собирать собственный
+            характер шрифта и формировать уникальный визуальный язык внутри
+            одного семейства.
+          </p>
+        </div>
       </div>
-      <div>
+      <div id="features-block">
         <div>
           <img class="Features" src="img/Features-1.png" alt="Features-1" />
-          <p class="Features-description">Upright cursive</p>
+          <p class="Features-description" id="upright-cursive">
+            Upright cursive
+          </p>
         </div>
         <div>
           <img class="Features" src="img/Features-2.png" alt="Features-1" />
-          <p class="Features-description">Upright cursive</p>
+          <p class="Features-description" id="round-dots">Round dots</p>
         </div>
         <div>
           <img class="Features" src="img/Features-3.png" alt="Features-1" />
-          <p class="Features-description">Upright cursive</p>
+          <p class="Features-description" id="soft-character">Soft character</p>
         </div>
         <div>
           <img class="Features" src="img/Features-4.png" alt="Features-1" />
-          <p class="Features-description">Upright cursive</p>
+          <p class="Features-description" id="stylistics-alternates">
+            Stylistics alternates
+          </p>
         </div>
       </div>
-      <img class="Neo-dot-ris" src="img/neo-dot-ris.png" alt="neo-dot-ris" />
+      <img id="Neo-dot-ris" src="img/neo-dot-ris.png" alt="neo-dot-ris" />
     </section>
     <!-- !ВОСЬМОЙ БЛОК -->
     <section id="s-8">
-      <h2>Специальные символы</h2>
-      <p>
-        В набор входит большое количество различных знаков. Это избавляет
-        дизайнеров от необходимости создавать дополнительные иконки вручную —
-        всё уже встроено в гарнитуру и гармонично сочетается с её формами.
-      </p>
+      <h2 id="symbols-head">Специальные символы</h2>
+      <div id="symbols-text">
+        <p>
+          В набор входит большое количество различных знаков. Это избавляет
+          дизайнеров от необходимости создавать дополнительные иконки вручную —
+          всё уже встроено в гарнитуру и гармонично сочетается с её формами.
+        </p>
+      </div>
 
       <!-- фон-часы -->
       <div class="circle-frame">
         <img class="clocks" src="img/clocks.png" alt="clocks" />
-
-        <!-- символы вокруг круга -->
-        <div class="circle-item" style="--angle: 0deg">A</div>
-        <div class="circle-item" style="--angle: 60deg">B</div>
-        <div class="circle-item" style="--angle: 120deg">C</div>
-        <div class="circle-item" style="--angle: 180deg">D</div>
-        <div class="circle-item" style="--angle: 240deg">E</div>
-        <div class="circle-item" style="--angle: 300deg">F</div>
+        <div class="clocks-symbols">
+          <div id="row-1">
+            <span></span>
+            <span></span>
+          </div>
+          <div id="row-2">
+            <span>¤</span>
+            <span></span>
+          </div>
+          <div id="row-3">
+            <span></span>
+            <span></span>
+          </div>
+          <div id="row-4">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
       </div>
     </section>
     <!-- !ДЕВЯТЫЙ БЛОК -->
